@@ -1,0 +1,40 @@
+﻿<Window x:Class="OurDecor.InputParametersWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Введите параметры для расчета"
+        Height="437" Width="450"
+        Icon="Resources/logo.ico"
+        WindowStartupLocation="CenterOwner"
+        Background="#FAFAFA"
+        FontFamily="Segoe UI"
+        FontSize="18"
+        ResizeMode="NoResize">
+
+    <Border Margin="10" Padding="15" Background="White" CornerRadius="10" 
+            BorderBrush="#DDD" BorderThickness="1" >
+        <StackPanel>
+            <TextBlock Text="Введите параметры для расчета количества материалов" 
+                       FontWeight="Bold" FontSize="20" Margin="0,0,0,15" TextWrapping="Wrap"/>
+
+            <!-- Количество продукции -->
+            <TextBlock Text="Количество продукции:" Margin="0,0,0,5"/>
+            <TextBox x:Name="QuantityTextBox" Height="40" Padding="6"/>
+
+            <!-- Длина -->
+            <TextBlock Text="Параметр 1:" Margin="0,10,0,5"/>
+            <TextBox x:Name="Param1TextBox" Height="40" Padding="6"/>
+
+            <!-- Ширина -->
+            <TextBlock Text="Параметр 2:" Margin="0,10,0,5"/>
+            <TextBox x:Name="Param2TextBox" Height="40" Padding="6"/>
+
+            <!-- Кнопки -->
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,20,0,0">
+                <Button Content="Отмена" Width="120" Margin="0,0,10,0" 
+                        Background="#E0E0E0" Click="Cancel_Click"/>
+                <Button Content="OK" Width="120" Background="#4CAF50" Foreground="White" 
+                        Click="OK_Click"/>
+            </StackPanel>
+        </StackPanel>
+    </Border>
+</Window>
