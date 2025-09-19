@@ -5,7 +5,7 @@ using System.Collections.ObjectModel;
 using OurDecor.Model;
 using System.Data.Entity;
 using System.Windows.Controls;
-using System.Windows.Media; // ← обязательно для Brushes
+using System.Windows.Media;
 
 namespace OurDecor
 {
